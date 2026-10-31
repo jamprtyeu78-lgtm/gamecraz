@@ -1,0 +1,26 @@
+<!DOCTYPE html><html lang="ar" dir="rtl"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Metal Sonic City</title>
+<link rel="stylesheet" href="style.css"></head><body>
+<h1 id="ttl">METAL SONIC CITY</h1>
+<div id="menu" class="ui"><div id="load">...جاري التحميل</div>
+<div class="bt" id="bPlay" style="display:none">العب</div><div class="bt" id="bFr" style="display:none">العب مع أصدقائك</div><div class="bt" id="bSet" style="display:none">الإعدادات</div></div>
+<div id="set" class="ui"><label>الشرطة<select id="sDiff"><option value="0">بدون شرطة</option><option value="1">سهل</option><option value="2" selected>عادي</option><option value="3">صعب جداً</option></select></label>
+<label>الجرافيكس<select id="sQ"><option value="0">منخفض</option><option value="1" selected>عالي</option></select></label>
+<label>الوقت<select id="sTime"><option value="0">دورة نهار وليل</option><option value="1">نهار دائم</option><option value="2">ليل دائم</option></select></label>
+<label>الصوت<input id="sVol" type="range" min="0" max="1" step=".05" value=".7"></label>
+<label>المؤثرات<input id="sSfx" type="checkbox" checked></label><div class="bt" id="bBack">رجوع</div></div>
+<div id="fr" class="ui" style="display:none;background:var(--pn);justify-content:center"><div class="bt" id="bHost">إنشاء سيرفر</div><div class="bt" id="bJoin">انضم للسيرفر</div>
+<input id="code" placeholder="الكود" maxlength="5" style="text-align:center;width:200px;font-size:22px"><div id="frs"></div><div class="bt" id="bGo" style="display:none">ابدأ</div><div class="bt" id="bFb">رجوع</div></div>
+<div id="chat"></div><input id="ci" placeholder="اكتب رسالة ثم Enter"><div id="mic">🎤 المايك</div>
+<div id="hud"><span id="hp"></span><span id="heat"></span></div><div id="cross"></div>
+<div id="hint">WASD حركة · Space/C صعود ونزول · Shift سرعة · E ليزر · كليك يسار رمي · كليك يمين إنزال · Q/R مراوغة</div>
+<div id="toast"></div><div id="fade"></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/utils/SkeletonUtils.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/peerjs@1.5.4/dist/peerjs.min.js"></script>
+<script src="model.js"></script>
+<script src="model2.js"></script>
+<script src="game.js"></script>
+</body></html>
